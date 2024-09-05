@@ -1,14 +1,14 @@
 
 from abc import  abstractmethod,ABC
 
-class Shape(ABC):
+class calculate(ABC):
 
     @abstractmethod
     def calculate_area(self):
         pass
 
     @abstractmethod
-    def calculate_peremiter(self):
+    def calculate_perimeter(self):
         pass
 
 

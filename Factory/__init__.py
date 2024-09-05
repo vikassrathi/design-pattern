@@ -1,0 +1,1 @@
+#refrence: https://stackabuse.com/the-factory-method-design-pattern-in-python/
