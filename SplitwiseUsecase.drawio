@@ -1,0 +1,38 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.14">
+  <diagram name="Page-1" id="pF7G8MZDzQnrK49iilyB">
+    <mxGraphModel dx="1034" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qkdkIAT6Hk8rwlYpPvaK-1" value="Create group" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="100" width="140" height="70" as="geometry" />
+        </mxCell>
+        <object label="User" id="qkdkIAT6Hk8rwlYpPvaK-2">
+          <mxCell style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+            <mxGeometry x="100" y="105" width="40" height="95" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="qkdkIAT6Hk8rwlYpPvaK-3" value="watch Activity" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="210" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="qkdkIAT6Hk8rwlYpPvaK-4" value="Login" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="320" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="qkdkIAT6Hk8rwlYpPvaK-5" value="Add expenses" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="10" width="140" height="70" as="geometry" />
+        </mxCell>
+        <object label="User" id="qkdkIAT6Hk8rwlYpPvaK-10">
+          <mxCell style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+            <mxGeometry x="730" y="100" width="40" height="95" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="qkdkIAT6Hk8rwlYpPvaK-11" value="Equally" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="10" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="qkdkIAT6Hk8rwlYpPvaK-12" value="Add expenses" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="90" width="140" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
