@@ -1,31 +1,17 @@
 # https://refactoring.guru/design-patterns/singleton
 
-from threading import Lock, Thread
-
-
-class Singleton:
+class DoubleCheckedSingleton:
     _instance = None
-    _lock = Lock()
+    _lock = threading.Lock()
 
-    def __new__(cls, value: str):
-        with cls._lock:
-            if cls._instance is None:
-                cls._instance = super().__new__(cls)
-                cls._instance.value = value
-        return cls._instance
+    def __init__(self):
+        if DoubleCheckedSingleton._instance is not None:
+            raise Exception("Use get_instance() instead.")
 
-
-def test_singleton(value: str):
-    singleton = Singleton(value)
-    print(singleton.value)
-
-
-if __name__ == "__main__":
-    print("If you see the same value, then singleton was reused (yay!)\n"
-          "If you see different values, then 2 singletons were created (booo!!)\n\n"
-          "RESULT:\n")
-
-    t1 = Thread(target=test_singleton, args=("FOO",))
-    t2 = Thread(target=test_singleton, args=("BAR",))
-    t1.start()
-    t2.start()
+    @staticmethod
+    def get_instance():
+        if DoubleCheckedSingleton._instance is None:
+            with DoubleCheckedSingleton._lock:
+                if DoubleCheckedSingleton._instance is None:
+                    DoubleCheckedSingleton._instance = DoubleCheckedSingleton()
+        return DoubleCheckedSingleton._instance
